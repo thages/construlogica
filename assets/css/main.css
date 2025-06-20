@@ -3169,14 +3169,34 @@ input, select, textarea {
 			}
 		}
 	
-				#dynamic-word {
-					display: inline-block;
-					width: 150px;
-					
-					text-align: center;
-					white-space: nowrap;
-					animation: fade 2s infinite;
-				}
+                                #dynamic-word {
+                                        display: inline-block;
+                                        width: 150px;
+                                        text-align: center;
+                                        white-space: nowrap;
+                                        border-right: 2px solid #fdd835;
+                                        animation: blinkCursor 0.8s steps(2, start) infinite;
+                                }
+
+                                @keyframes blinkCursor {
+                                        0%, 100% {
+                                                border-color: transparent;
+                                        }
+                                        50% {
+                                                border-color: #fdd835;
+                                        }
+                                }
+
+.reveal {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+}
 
 .service-list {
 	list-style: none;
