@@ -1,0 +1,117 @@
+:root {
+  --primary-color: #0a1f44;
+  --secondary-color: #1e293b;
+  --accent-color: #f9b32d;
+  --text-color: #2f2f2f;
+  --bg-color: #ffffff;
+}
+
+body {
+  font-family: 'Inter', 'Roboto', sans-serif;
+  color: var(--text-color);
+  background: var(--bg-color);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: var(--primary-color);
+  margin: 0 0 1rem;
+}
+
+header#header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(10,31,68,0.85);
+  backdrop-filter: blur(6px);
+}
+
+#header .inner header h1 a {
+  font-size: 2rem;
+  color: var(--accent-color);
+}
+
+#header nav a {
+  padding: 1rem;
+  display: block;
+  color: white;
+}
+
+#header nav a.active {
+  color: var(--accent-color);
+}
+
+#banner {
+  height: 100vh;
+  background: linear-gradient(rgba(10,31,68,0.6), rgba(10,31,68,0.6)), url('../images/header.jpg') center/cover no-repeat fixed;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#features .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap:2rem;
+}
+
+article.special {
+  background: #f7f9fc;
+  padding:2rem;
+  border-radius:12px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.05);
+  transition:transform 0.3s ease;
+}
+article.special:hover {
+  transform:translateY(-4px);
+}
+
+.obras-gallery {
+  background:#0c111c;
+  color:white;
+}
+
+.card-obra {
+  overflow:hidden;
+  border-radius:12px;
+  position:relative;
+  transition:transform 0.3s ease;
+}
+.card-obra img {
+  width:100%;
+  display:block;
+  transition:transform 0.3s ease;
+}
+.card-obra:hover img {
+  transform:scale(1.08);
+}
+
+.card-obra::after {
+  content:'';
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.3);
+  opacity:0;
+  transition:opacity 0.3s ease;
+}
+.card-obra:hover::after {
+  opacity:1;
+}
+
+footer {
+  background: var(--secondary-color);
+  color:white;
+}
+
+footer a {
+  color: var(--accent-color);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
