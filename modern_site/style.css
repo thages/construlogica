@@ -1,0 +1,44 @@
+/* Basic reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #333; }
+
+/* Utility classes */
+.container { width: 90%; max-width: 1200px; margin: 0 auto; }
+.btn { padding: 0.6rem 1rem; border-radius: 4px; text-decoration: none; font-weight: 600; }
+.btn.primary { background-color: #1e3a8a; color: white; transition: background 0.3s ease; }
+.btn.primary:hover { background-color: #274cab; }
+
+/* Header */
+.site-header { position: sticky; top: 0; background: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1); z-index: 100; }
+.site-header .container { display: flex; justify-content: space-between; align-items: center; padding: 0.8rem 0; }
+.logo { font-size: 1.5rem; font-weight: 700; color: #1e3a8a; }
+.site-nav a { margin-left: 1rem; color: #333; text-decoration: none; }
+.site-nav a:hover { color: #1e3a8a; }
+
+/* Hero */
+.hero { background: url('../public/destaque.jpg') center/cover no-repeat; color: white; display: flex; align-items: center; min-height: 70vh; text-align: center; }
+.hero-content { display: flex; flex-direction: column; gap: 1.5rem; }
+.hero h2 { font-size: 2rem; }
+
+/* Sections */
+.tech-section, .projects-section { padding: 4rem 0; }
+.tech-section h2, .projects-section h2 { font-size: 1.8rem; margin-bottom: 1rem; color: #1e3a8a; text-align: center; }
+.tech-section p { max-width: 800px; margin: 0.5rem auto 0; text-align: center; }
+
+/* Projects */
+.projects-section .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+.projects-section img { width: 100%; border-radius: 8px; transform: scale(1); transition: transform 0.3s ease; }
+.projects-section img:hover { transform: scale(1.05); }
+
+/* Footer */
+.site-footer { background: #1e3a8a; color: white; text-align: center; padding: 2rem 0; margin-top: 2rem; }
+
+/* Fade-in animation */
+.fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+@media (max-width: 768px) {
+    .site-nav a { margin-left: 0.5rem; font-size: 0.9rem; }
+    .hero h2 { font-size: 1.5rem; }
+}
