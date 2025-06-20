@@ -1,183 +1,282 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE HTML>
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Construlogica Empreendimentos S.A. - En Construcción</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name="apple-mobile-web-app-title" content="Construlogica Empreendimentos S. A." />
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background: #1a1a1a;
-            color: #fff;
-            text-align: center;
-            overflow: hidden;
-        }
-
-        .container {
-            max-width: 600px;
-            padding: 20px;
-            position: relative;
-            z-index: 2;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-
-        p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-        }
-
-        .countdown {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-
-        .email-box {
-            display: flex;
-            justify-content: center;
-        }
-
-        input {
-            padding: 10px;
-            border: none;
-            width: 70%;
-        }
-
-        button {
-            padding: 10px;
-            background: #e63946;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-
-        .social {
-            margin-top: 20px;
-        }
-
-        .social a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.5rem;
-            margin: 0 10px;
-        }
-
-        .background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('/public/destaque.jpg') no-repeat;
-            background-size: 55%;
-            clip-path: polygon(0 0, 60% 0, 50% 100%, 0% 100%);
-            z-index: 1;
-        }
-
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 70%;
-            width: 30%;
-            height: 100%;
-            background-color: #1a1a1a;
-            z-index: 1;
-        }
-
-        @media (max-width: 1440px) {
-            .background {
-                background-size: 45%;
-            }
-        }
-
-        @media (max-width: 1024px) {
-            .background {
-                background-size: 35%;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .background {
-                clip-path: none;
-                background-size: contain;
-            }
-
-            .overlay {
-                display: none;
-            }
-        }
-
-        @media (min-width: 1920px) {
-            .background {
-                background-size: 65%;
-            }
-        }
-
-        .shadow {
-            text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.69);
-        }
-    </style>
+    <title>Construlogica</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
 </head>
 
-<body>
-    <div class="background"></div>
-    <div class="overlay"></div>
-    <div class="container">
-        <h1 class="shadow">Construlogica</h1>
-        <p class="shadow">Estamos trabajando en algo increíble. ¡Pronto estaremos en línea!</p>
-        <div class="countdown" id="countdown">Cargando...</div>
-        <!-- <p>Déjanos tu correo para mantenerte informado:</p>
-        <div class="email-box">
-            <input type="email" placeholder="Tu correo electrónico">
-            <button>Enviar</button>
+<body class="homepage is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <div id="header">
+
+            <!-- Inner -->
+            <div class="inner">
+                <header>
+                    <h1><a href="index.html" id="logo"><span
+                                style="font-weight: 700; color: #fdd835;">Constru</span><span
+                                style="font-style: italic;">logica</span></a></h1>
+                    <hr />
+                    <p>Everything thing starts with power</p>
+                </header>
+                <footer>
+                    <a href="#banner" class="button circled scrolly">Enterarse</a>
+                </footer>
+            </div>
+
+            <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li>
+                        <a href="#features">Soluciones</a>
+                        <!-- <ul>
+							<li><a href="#">Lorem ipsum dolor</a></li>
+							<li><a href="#">Magna phasellus</a></li>
+							<li><a href="#">Etiam dolore nisl</a></li>
+							<li>
+								<a href="#">And a submenu &hellip;</a>
+								<ul>
+									<li><a href="#">Lorem ipsum dolor</a></li>
+									<li><a href="#">Phasellus consequat</a></li>
+									<li><a href="#">Magna phasellus</a></li>
+									<li><a href="#">Etiam dolore nisl</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Veroeros feugiat</a></li>
+						</ul> -->
+                    </li>
+                    <li><a href="#eletrotrafo">Productos</a></li>
+                    <li><a href="#contact-info">Contáctanos</a></li>
+                    <li><a href="#contact-info">Acerca de</a></li>
+                </ul>
+            </nav>
+
         </div>
-        <div class="social">
-            <a href="#">📘</a>
-            <a href="#">🐦</a>
-            <a href="#">📷</a>
-        </div> -->
+
+        <!-- Banner -->
+        <section id="banner">
+            <header>
+                <h2>Especializados en Instalaciones <span id="dynamic-word">Industriales</span></h2>
+                <p>
+                    En Construlogica contamos con personal altamente capacitado para
+                    ofrecerte lo mejor para tu proyecto.
+                </p>
+            </header>
+        </section>
+
+        <section id="features" class="container special">
+            <div class="row" style="padding: 2rem 0;">
+                <article class="col-4 col-12-mobile special">
+                    <a href="#" class="image featured"><img class="service-image"
+                            src="images/instalaciones-eletricas.jpg"
+                            alt="Photo by Sami  Abdullah: https://www.pexels.com/photo/an-electrician-inspecting-a-fuse-box-7359566/" /></a>
+                    <div class="service-header">
+                        <span class="service-marker"></span>
+                        <h3 class="service-title">
+                            <a href="#">Servicios de Instalaciones</a>
+                        </h3>
+                    </div>
+                    <ul class="service-list">
+                        <li>Eléctricas en general</li>
+                        <li>Equipos de prevención de incendios</li>
+                        <li>Puesta a tierra</li>
+                        <li>Transformadores, generadores y más</li>
+                    </ul>
+                </article>
+                <article class="col-4 col-12-mobile special">
+                    <a href="#" class="image featured"><img class="service-image" src="images/media-tension.jpg"
+                            alt="Photo by Mario Amé: https://www.pexels.com/photo/close-up-of-electricity-boxes-11032801/" /></a>
+                    <div class="service-header">
+                        <span class="service-marker"></span>
+                        <h3 class="service-title"><a href="#">Tensión Media</a></h3>
+                    </div>
+                    <ul class="service-list">
+                        <li>Redes tipo Ande o particular 23Kv</li>
+                        <li>Casa primaria</li>
+                        <li>Transformadores de potencia > 1.000 kVa</li>
+                        <li>Subestaciones particurales</li>
+                    </ul>
+                </article>
+                <article class="col-4 col-12-mobile special">
+                    <a href="#" class="image featured"><img class="service-image" src="images/chiller.jpg" alt="" /></a>
+                    <div class="service-header">
+                        <span class="service-marker"></span>
+                        <h3 class="service-title"><a href="#">Termodinámica</a></h3>
+                    </div>
+                    <ul class="service-list">
+                        <li>Climatización de industrias</li>
+                        <li>Cámaras frias</li>
+                        <li>Refrigeración de agua industrial <i>chillers</i></li>
+                        <li>Redes con aislación térmica de agua</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- COMTRAFO Partnership Section -->
+        <section class="comtrafo-partnership">
+            <div class="container-comtrafo">
+                <div class="comtrafo-text">
+                    <h2>Tecnología de Vanguardia</h2>
+                    <h3>Alianza Estratégica con COMTRAFO</h3>
+                    <p>
+                        En alianza con <strong>COMTRAFO</strong>, ofrecemos soluciones avanzadas en transformadores de
+                        potencia,
+                        adaptadas a las exigencias de cada proyecto energético. Conoce más sobre esta tecnología de alta
+                        confiabilidad.
+                    </p>
+                    <a class="button strong" href="https://www.comtrafo.com.br/" target="_blank">Visita COMTRAFO</a>
+                </div>
+                <div class="comtrafo-image">
+                    <img src="images/section-comtrafo.avif" alt="Transformador COMTRAFO" />
+                </div>
+            </div>
+        </section>
+
+        <section id="obras" class="obras-gallery" style="padding: 5rem 1rem; background-color: #0c111c; color: white;">
+            <div class="container" style="max-width: 1200px; margin: auto;">
+                <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2.5rem; color: #00d4ff;">
+                    Instalaciones ejecutadas
+                </h2>
+                <div class="futuristic-grid">
+                    <div class="card-obra" data-index="1"><img src="images/jobs/1.jpeg" alt="Obra 1" /></div>
+                    <div class="card-obra" data-index="2"><img src="images/jobs/2.jpeg" alt="Obra 2" /></div>
+                    <div class="card-obra" data-index="3"><img src="images/jobs/4.jpeg" alt="Obra 3" /></div>
+                    <div class="card-obra" data-index="4"><img src="images/jobs/9.jpeg" alt="Obra 4" /></div>
+                    <div class="card-obra" data-index="1"><img src="images/jobs/10.jpeg" alt="Obra 1" /></div>
+                    <div class="card-obra" data-index="2"><img src="images/jobs/11.jpeg" alt="Obra 2" /></div>
+                    <div class="card-obra" data-index="3"><img src="images/jobs/12.jpeg" alt="Obra 3" /></div>
+                    <div class="card-obra" data-index="4"><img src="images/jobs/13.jpeg" alt="Obra 4" /></div>
+                    <div class="card-obra" data-index="1"><img src="images/jobs/14.jpeg" alt="Obra 1" /></div>
+                    <div class="card-obra" data-index="2"><img src="images/jobs/15.jpeg" alt="Obra 2" /></div>
+                    <div class="card-obra" data-index="3"><img src="images/jobs/16.jpeg" alt="Obra 3" /></div>
+                    <div class="card-obra" data-index="4"><img src="images/jobs/17.jpeg" alt="Obra 4" /></div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- <section id="clientes" class="carousel-clientes" style="padding: 4rem 1rem; background-color: #f5f7fa;">
+            <div class="container" style="max-width: 1200px; margin: auto;">
+                <h2 style="text-align: center; margin-bottom: 2rem; color: #003366;">Nuestros Clientes</h2>
+                <div class="logo-carousel">
+                    <div class="logo-track">
+                        <img src="images/clients/ande.png" alt="Cliente 1" />
+                        <img src="images/clients/Logo_Itaipu_Preferencial.svg.png" alt="Cliente 2" />
+                        <img src="images/clients/Logo_Tigo.png" alt="Cliente 3" />
+                        <img src="images/clients/ande.png" alt="Cliente 1" />
+                        <img src="images/clients/Logo_Itaipu_Preferencial.svg.png" alt="Cliente 2" />
+                        <img src="images/clients/Logo_Tigo.png" alt="Cliente 3" />
+                        <img src="images/clients/ande.png" alt="Cliente 1" />
+                        <img src="images/clients/Logo_Itaipu_Preferencial.svg.png" alt="Cliente 2" />
+                        <img src="images/clients/Logo_Tigo.png" alt="Cliente 3" />
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <footer style="background-color: hsl(211, 32%, 14%); color: white; padding: 3rem 1rem;">
+            <div class="container" style="
+		    display: flex;
+		    flex-wrap: wrap;
+		    justify-content: space-between;
+		    align-items: center;
+		    gap: 2rem;
+		    max-width: 1200px;
+		    margin: 0 auto;
+		  ">
+
+                <!-- Coluna Esquerda -->
+                <div style="flex: 1 1 400px;" id="contact-info">
+                    <!-- <img src="images/logo-blanco.svg" alt="Logo" style="max-width: 180px; margin-bottom: 1.5rem;" /> -->
+                    <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: white;">Construlogica S.A.</h2>
+                    <div style="display: flex; align-items: center; margin-bottom: 0.75rem;">
+                        <i class="fas fa-phone-alt" style="margin-right: 0.5rem; font-size: 1.1rem;"></i>
+                        <span>+595 983 530890</span>
+                    </div>
+                    <div style="display: flex; align-items: center; margin-bottom: 0.75rem;">
+                        <i class="fas fa-map-marker-alt" style="margin-right: 0.5rem;"></i>
+                        Calle Ejemplo 123, Ciudad del Este, Paraguay
+                    </div>
+                    <div style="display: flex; align-items: center; margin-bottom: 0.75rem;">
+                        <i class="fas fa-clock" style="margin-right: 0.5rem;"></i>
+                        Lunes a Viernes: 08:00 - 17:00
+                    </div>
+
+                    <div style="display: flex; align-items: center;  margin-bottom: 0.75rem;">
+                        <i class="fas fa-envelope" style="margin-right: 0.5rem; font-size: 1.1rem;"></i>
+                        <a href="mailto:contacto@contrulogica.com.py" style="color: white; text-decoration: none;">
+                            contacto@contrulogica.com.py
+                        </a>
+                    </div>
+
+                    <div style="margin-top: 1.5rem; font-size: 1.1rem;">
+                        <a href="#" class="icon brands fa-facebook-f" style="margin-right: 1rem; color: white;"></a>
+                        <a href="#" class="icon brands fa-instagram" style="margin-right: 1rem; color: white;"></a>
+                        <a href="#" class="icon brands fa-linkedin-in" style="margin-right: 1rem; color: white;"></a>
+                        <a href="#" class="icon brands fa-youtube" style="color: white"></a>
+                    </div>
+                </div>
+
+                <!-- Coluna Direita -->
+                <div style="flex: 1 1 400px;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.693371998065!2d-54.717083499999994!3d-25.481912299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f687a46c807283%3A0x757aaea308515bab!2sConstrulogica%20Emprendimientos%20S.A!5e0!3m2!1spt-BR!2spy!4v1744043094086!5m2!1spt-BR!2spy"
+                        width="100%" height="220" style="border:0; border-radius: 12px;" allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Rodapé inferior -->
+            <div
+                style="text-align: center; margin-top: 2rem; font-size: 0.9rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1);">
+                Copyright © 2025 Construlogica Emprendimientos S.A. | Powered by
+                <a href="https://bentoalmeida.com" style="color: #f9b32d;">Bento Almeida</a>.
+            </div>
+
+            <!-- Ícones -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+        </footer>
+
+
     </div>
     <script>
-        function startCountdown() {
-            const endDate = new Date('2025-03-22');
-            endDate.setDate(endDate.getDate() + 30); // Cambia 30 por los días hasta el lanzamiento
-            function updateCountdown() {
-                const now = new Date();
-                const difference = endDate - now;
-                if (difference < 0) {
-                    document.getElementById("countdown").innerText = "¡Ya estamos en línea!";
-                    return;
-                }
-                const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((difference % (1000 * 60)) / 1000);
-                document.getElementById("countdown").innerText = `${days} días, ${hours}h ${minutes}m ${seconds}s`;
-            }
-            setInterval(updateCountdown, 1000);
-        }
-        startCountdown();
+        document.addEventListener("DOMContentLoaded", () => {
+            const cards = document.querySelectorAll(".card-obra");
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach((entry, i) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.classList.add("visible");
+                        }, i * 150); // staggered reveal
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            cards.forEach(card => observer.observe(card));
+        });
     </script>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/dynamicWord.js"></script>
+    <script src="assets/js/eletrotrafo-api.js"></script>
 </body>
 
 </html>
