@@ -5,7 +5,9 @@
     <title>Construlogica</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
@@ -62,13 +64,14 @@
         </div>
 
         <!-- Banner -->
-        <section id="banner">
+        <section id="banner" class="hero-section">
             <header>
                 <h2>Especializados en Instalaciones <span id="dynamic-word">Industriales</span></h2>
                 <p>
                     En Construlogica contamos con personal altamente capacitado para
                     ofrecerte lo mejor para tu proyecto.
                 </p>
+                <a href="#contact-info" class="cta-button">Contáctanos</a>
             </header>
         </section>
 
@@ -242,25 +245,6 @@
         </footer>
 
 
-    </div>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const cards = document.querySelectorAll(".card-obra");
-
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach((entry, i) => {
-                    if (entry.isIntersecting) {
-                        setTimeout(() => {
-                            entry.target.classList.add("visible");
-                        }, i * 150); // staggered reveal
-                    }
-                });
-            }, { threshold: 0.2 });
-
-            cards.forEach(card => observer.observe(card));
-        });
-    </script>
-    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.dropotron/1.4.3/jquery.dropotron.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrolly/1.0.0/jquery.scrolly.min.js"></script>
@@ -271,6 +255,8 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/dynamicWord.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/scrollreveal-init.js"></script>
     <script src="assets/js/reveal.js"></script>
 </body>
 
