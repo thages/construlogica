@@ -146,30 +146,22 @@
                 <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2.5rem; color: #00d4ff;">
                     Instalaciones ejecutadas
                 </h2>
-                <div class="futuristic-grid">
-                    <div class="card-obra" data-index="1"><img loading="lazy" src="images/jobs/1.jpeg" alt="Obra 1" />
+                <div class="carousel-wrapper">
+                    <div class="carousel3d">
+                        <div class="carousel-item"><img loading="lazy" src="images/jobs/1.jpeg" alt="Obra 1" /></div>
+                        <div class="carousel-item"><img loading="lazy" src="images/jobs/2.jpeg" alt="Obra 2" /></div>
+                        <div class="carousel-item"><img loading="lazy" src="images/jobs/3.jpeg" alt="Obra 3" /></div>
+                        <div class="carousel-item"><img loading="lazy" src="images/jobs/4.jpeg" alt="Obra 4" /></div>
+                        <div class="carousel-item"><img loading="lazy" src="images/jobs/5.jpeg" alt="Obra 5" /></div>
+                        <div class="carousel-item"><img loading="lazy" src="images/jobs/6.jpeg" alt="Obra 6" /></div>
+                        <div class="carousel-item"><img loading="lazy" src="images/jobs/7.jpeg" alt="Obra 7" /></div>
+                        <div class="carousel-item"><img loading="lazy" src="images/jobs/8.jpeg" alt="Obra 8" /></div>
+                        <div class="carousel-item"><img loading="lazy" src="images/jobs/9.jpeg" alt="Obra 9" /></div>
+                        <div class="carousel-item"><img loading="lazy" src="images/jobs/10.jpeg" alt="Obra 10" /></div>
                     </div>
-                    <div class="card-obra" data-index="2"><img loading="lazy" src="images/jobs/2.jpeg" alt="Obra 2" />
-                    </div>
-                    <div class="card-obra" data-index="3"><img loading="lazy" src="images/jobs/4.jpeg" alt="Obra 3" />
-                    </div>
-                    <div class="card-obra" data-index="4"><img loading="lazy" src="images/jobs/9.jpeg" alt="Obra 4" />
-                    </div>
-                    <div class="card-obra" data-index="1"><img loading="lazy" src="images/jobs/10.jpeg" alt="Obra 1" />
-                    </div>
-                    <div class="card-obra" data-index="2"><img loading="lazy" src="images/jobs/11.jpeg" alt="Obra 2" />
-                    </div>
-                    <div class="card-obra" data-index="3"><img loading="lazy" src="images/jobs/12.jpeg" alt="Obra 3" />
-                    </div>
-                    <div class="card-obra" data-index="4"><img loading="lazy" src="images/jobs/13.jpeg" alt="Obra 4" />
-                    </div>
-                    <div class="card-obra" data-index="1"><img loading="lazy" src="images/jobs/14.jpeg" alt="Obra 1" />
-                    </div>
-                    <div class="card-obra" data-index="2"><img loading="lazy" src="images/jobs/15.jpeg" alt="Obra 2" />
-                    </div>
-                    <div class="card-obra" data-index="3"><img loading="lazy" src="images/jobs/16.jpeg" alt="Obra 3" />
-                    </div>
-                    <div class="card-obra" data-index="4"><img loading="lazy" src="images/jobs/17.jpeg" alt="Obra 4" />
+                    <div class="carousel-controls">
+                        <button id="prev">&#10094;</button>
+                        <button id="next">&#10095;</button>
                     </div>
                 </div>
             </div>
@@ -243,23 +235,8 @@
 
 
     </div>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const cards = document.querySelectorAll(".card-obra");
-
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach((entry, i) => {
-                    if (entry.isIntersecting) {
-                        setTimeout(() => {
-                            entry.target.classList.add("visible");
-                        }, i * 150); // staggered reveal
-                    }
-                });
-            }, { threshold: 0.2 });
-
-            cards.forEach(card => observer.observe(card));
-        });
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="assets/js/carousel3d.js"></script>
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.dropotron/1.4.3/jquery.dropotron.min.js"></script>
