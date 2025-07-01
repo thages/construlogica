@@ -9,6 +9,7 @@
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body class="homepage is-preload">
@@ -37,25 +38,10 @@
                     <li><a href="#header">Home</a></li>
                     <li>
                         <a href="#features">Soluciones</a>
-                        <!-- <ul>
-							<li><a href="#">Lorem ipsum dolor</a></li>
-							<li><a href="#">Magna phasellus</a></li>
-							<li><a href="#">Etiam dolore nisl</a></li>
-							<li>
-								<a href="#">And a submenu &hellip;</a>
-								<ul>
-									<li><a href="#">Lorem ipsum dolor</a></li>
-									<li><a href="#">Phasellus consequat</a></li>
-									<li><a href="#">Magna phasellus</a></li>
-									<li><a href="#">Etiam dolore nisl</a></li>
-								</ul>
-							</li>
-							<li><a href="#">Veroeros feugiat</a></li>
-						</ul> -->
                     </li>
-                    <li><a href="#eletrotrafo">Productos</a></li>
+                    <li><a href="#obras">Servicios</a></li>
                     <li><a href="#contact-info">Contáctanos</a></li>
-                    <li><a href="#contact-info">Acerca de</a></li>
+                    <!-- <li><a href="#contact-info">Acerca de</a></li> -->
                 </ul>
             </nav>
 
@@ -141,28 +127,28 @@
             </div>
         </section>
 
-        <section id="obras" class="obras-gallery" style="padding: 5rem 1rem; background-color: #0c111c; color: white;">
+        <section id="obras" class="obras-gallery">
             <div class="container" style="max-width: 1200px; margin: auto;">
-                <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2.5rem; color: #00d4ff;">
-                    Instalaciones ejecutadas
+                <h2 class="obras-title">
+                    Instalaciones Ejecutadas
                 </h2>
-                <div class="carousel-wrapper">
-                    <div class="carousel3d">
-                        <div class="carousel-item"><img loading="lazy" src="images/jobs/1.jpeg" alt="Obra 1" /></div>
-                        <div class="carousel-item"><img loading="lazy" src="images/jobs/2.jpeg" alt="Obra 2" /></div>
-                        <div class="carousel-item"><img loading="lazy" src="images/jobs/3.jpeg" alt="Obra 3" /></div>
-                        <div class="carousel-item"><img loading="lazy" src="images/jobs/4.jpeg" alt="Obra 4" /></div>
-                        <div class="carousel-item"><img loading="lazy" src="images/jobs/5.jpeg" alt="Obra 5" /></div>
-                        <div class="carousel-item"><img loading="lazy" src="images/jobs/6.jpeg" alt="Obra 6" /></div>
-                        <div class="carousel-item"><img loading="lazy" src="images/jobs/7.jpeg" alt="Obra 7" /></div>
-                        <div class="carousel-item"><img loading="lazy" src="images/jobs/8.jpeg" alt="Obra 8" /></div>
-                        <div class="carousel-item"><img loading="lazy" src="images/jobs/9.jpeg" alt="Obra 9" /></div>
-                        <div class="carousel-item"><img loading="lazy" src="images/jobs/10.jpeg" alt="Obra 10" /></div>
+
+                <!-- ———  Swiper root  ——— -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <!-- 10 sample images – swap src="" with your own paths -->
+                        <div class="swiper-slide"><img src="images/jobs/1.jpeg" alt="Obra 1" /></div>
+                        <div class="swiper-slide"><img src="images/jobs/2.jpeg" alt="Obra 2" /></div>
+                        <div class="swiper-slide"><img src="images/jobs/3.jpeg" alt="Obra 3" /></div>
+                        <div class="swiper-slide"><img src="images/jobs/4.jpeg" alt="Obra 4" /></div>
+                        <div class="swiper-slide"><img src="images/jobs/5.jpeg" alt="Obra 5" /></div>
+                        <div class="swiper-slide"><img src="images/jobs/6.jpeg" alt="Obra 6" /></div>
+                        <div class="swiper-slide"><img src="images/jobs/7.jpeg" alt="Obra 7" /></div>
+                        <div class="swiper-slide"><img src="images/jobs/8.jpeg" alt="Obra 8" /></div>
+                        <div class="swiper-slide"><img src="images/jobs/9.jpeg" alt="Obra 9" /></div>
+                        <div class="swiper-slide"><img src="images/jobs/10.jpeg" alt="Obra 10" /></div>
                     </div>
-                    <div class="carousel-controls">
-                        <button id="prev">&#10094;</button>
-                        <button id="next">&#10095;</button>
-                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
@@ -190,7 +176,7 @@
                     </div>
                     <div style="display: flex; align-items: center; margin-bottom: 0.75rem;">
                         <i class="fas fa-map-marker-alt" style="margin-right: 0.5rem;"></i>
-                        Calle Ejemplo 123, Ciudad del Este, Paraguay
+                        KM 11, Ciudad del Este, 100103, Paraguay
                     </div>
                     <div style="display: flex; align-items: center; margin-bottom: 0.75rem;">
                         <i class="fas fa-clock" style="margin-right: 0.5rem;"></i>
@@ -235,7 +221,7 @@
 
 
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/carousel3d.js"></script>
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
